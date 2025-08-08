@@ -1,0 +1,67 @@
+---
+title: "BirFatura Entegrasyonu"
+---
+
+ElbiseBul siparişlerinize BirFatura entegrasyonu ile otomatik fatura kesebilir, kargo takip linklerini güncelleyebilirsiniz.
+
+## ElbiseBul Mağaza Panelinde Yapılması Gerekenler
+
+BirFatura entegrasyonu için ElbiseBul mağaza panelinizde sol menüde yer alan API Servisi adımından Access Token oluşturun ve bu Token'ı not defterine kaydedin. Token bir defa gösterilecektir.
+
+1. ElbiseBul mağaza panelinizde sol menüde API Servisi menüsüne tıklayın. Açılan sayfada Şireniz alanına ElbiseBul şifrenizi girin ve **ACCESS TOKEN OLUŞTUR** butonuna basın.
+
+    <img
+    style={{ borderRadius: '0.5rem' }}
+    src="https://static.elbisebul.com/store-helpers/elbisebul-access-token-alma.png"
+    />
+
+2. Oluşturulan ACESS TOKEN'ı bir yere not edin, unutmayın bu alanda yer alan token sadece bir defa gösterilecektir.
+
+    <img
+    style={{ borderRadius: '0.5rem' }}
+    src="https://static.elbisebul.com/store-helpers/elbisebul-access-token-alma-2.png"
+    />
+
+## BirFatura Panelinde Yapılması Gerekenler
+
+1. BirFatura panelinizde [Mağaza Ayarları](https://uygulama.birfatura.com/magazaayarlarigenel) sayfasında en altında **Diğer Entegrasyonlar** bölümünde **Özel Entegrasyon**'u seçin.
+
+    <img
+    style={{ borderRadius: '0.5rem' }}
+    src="https://static.elbisebul.com/store-helpers/birfatura-1.png"
+    />
+
+2. Açılan sayfada sağ alanda yer alan **YENİ MAĞAZA EKLE** butonuna basın. 
+
+    <img
+    style={{ borderRadius: '0.5rem' }}
+    src="https://static.elbisebul.com/store-helpers/birfatura-2.png"
+    />
+
+3. Açılan pencerede yer alan formu aşağıdaki gibi doldurun ve **Hangi Durumdaki Siparişleri Görmek İstiyorsunuz** satırında yer alan **DOLDUR** butona basın.
+    <Note>
+    **Mağaza Adı:** ElbiseBul Mağaza Adınız (Sipariş listesinde buraya girdiğiniz ad görünecektir.)\
+    **Web Sitenizin Adresi:** http://apis.elbisebul.com/integrations/birfatura (adresi doğru yazdığınızdan emin olun)\
+    **API Şifresi:** İlk adımda oluşturduğunuz **ACCESS TOKEN** değerini buraya yapıştırın.\
+    **Satış Kanalı Url:** https://www.elbisebul.com girin.\
+    **Altyapı Sağlayıcı Firma:** Kendi Altyapımız seçin.
+    </Note>
+    <img
+    style={{ borderRadius: '0.5rem' }}
+    src="https://static.elbisebul.com/store-helpers/birfatura-3.png"
+    />
+
+4. **DOLDUR** butonuna bastıktan sonra BirFatura, ElbiseBul sipariş durumlarını **Hangi Durumdaki Siparişleri Görmek İstiyorsunuz** ve **Kargo Takip Numarası Çıktıktan Sonra Sipariş Durumu** alanlarına otomatik olarak getirecektir. Sonrasında formu aşağıdaki gibi doldurmaya deva edebilirsiniz.
+    <Note>
+    **Hangi Durumdaki Siparişleri Görmek İstiyorsunuz:** Hazırlanıyor\
+    **Kargo Takip Numarası Çıktıktan Sonra Sipariş Durumu:** Kargoya verildi\
+    **Faturalar E-Posta Yolu ile İletilsin** kutusunu işaretleyin
+    </Note>
+    <img
+    style={{ borderRadius: '0.5rem' }}
+    src="https://static.elbisebul.com/store-helpers/birfatura-5.png"
+    />
+
+5. Formu doldurduktan sonra sol alt kısımda yer alan **TEST ET** butonuna basın. BirFatura bağlantıyı test ettikten sonra **KAYDET** butona basarak ayarları kaydedin ve entegrasyon işlemini tamamlayın.
+
+<Check>Entegrasyon tamamlandı, artık Siparilerinizi **Siparişler > Onaylanmış** menüsünden yönetebilirsiniz.</Check>

@@ -1,108 +1,67 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "ElbiseBul Mağaza bilgi Merkezi",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#E50064",
     "light": "#07C983",
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
+
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Giriş",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "index"
             ]
           },
           {
-            "group": "Customization",
+            "group": "E-ticaret Entegrasyonları",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "e-ticaret-entegrasyonlari/ikas",
+              "e-ticaret-entegrasyonlari/shopify",
+              "e-ticaret-entegrasyonlari/ticimax"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "E-fatura Entegrasyonları",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "e-fatura-entegrasyonlari/birfatura"
             ]
           }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
+        ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Mağaza Paneli",
+          "href": "https://magazam.elbisebul.com",
+          "icon": "house"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "API Access Token",
+          "href": "https://magazam.elbisebul.com/store-api",
+          "icon": "webhook"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "https://static.elbisebul.com/favicon/apple-icon-152x152.png",
+    "dark": "https://static.elbisebul.com/favicon/apple-icon-152x152.png"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Destek",
+        "href": "https://wa.me/908503088770"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Mağaza Paneli",
+      "href": "https://www.magazam.elbisebul.com"
     }
   },
   "contextual": {
@@ -118,10 +77,6 @@
    ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+
   }
 }
